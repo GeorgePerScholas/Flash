@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cast of Characters</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+
+
+</head>
+<body>
+	<div class="header">
+		<h1>Characters</h1>
+	</div>
+
+
+	<div class="navbar">
+		<div id="buttonReg"><a href="about.html">About</a></div>
+		<div id="buttonReg"><a href="flashcast.html">Characters</a></div>
+		<div id="buttonReg"><a href="powers.html">Flash Powers</a></div>
+		<div id="buttonReg"><a href="villians.html">Rouges Gallery</a></div>
+	</div>
+
+	<div class="body">
+
+	<div class="left"></div>
+
+	<div class="right"></div>
+
+
+	<div class="viewer">
+		<center><img src="../images/button.left.png" onclick="spinCast(-1)" style="width: 75px;">
+		<img src="../images/button.right.png" onclick="spinCast(1)" style="width: 75px;"><br>
+		
+
+		<figure class="flashSlides">
+		<figcaption><h2>Barry Allen</h2><br><center>
+		<img src="../images/Barry.Allen.jpg" style="height: 50%;"></center><br> 
+		Bartholomew Henry "Barry" Allen is a scientist in the Criminal and Forensic Science Division of Central City Police Department. Barry is the son of the late Henry Allen and the late Nora Allen, the foster son of Joe West, and the fiance of Iris West.</figcaption>
+		</figure>
+		
+		<figure class="flashSlides">
+		<figcaption><h2>The Flash</h2><br><center>
+		<img src="../images/Flash.02.jpg" style="height: 400px;"></center><br> 
+		As the the Flash, he uses super speed to fight crime and stop super powered criminals. The Flash's powers come from his connection to the Speed Force, gained from being struck by dark matter lightning and exposed to various chemicals.</figcaption>
+		</figure>
+		
+		<figure class="flashSlides">
+		<figcaption><h2>Iris West</h2><br><center>
+		<img src="../images/Iris.West.jpg" style="height: 50%;"><br></center> 
+		Iris Ann West is a journalist working for the Central City Picture News, a former waitress at CC Jitters, and a psychology graduate student. Iris is also the daughter of Joe and the late Francine West, the older sister of Wally West and current fiance of Barry Allen.</figcaption>
+		</figure>
+		
+		<figure class="flashSlides">
+		<figcaption><h2>Joe West</h2><br><center>
+		<img src="../images/Joe.West.jpg" style="height: 50%;"></center><br> 
+		Detective Joseph "Joe" West is a police detective of the Central City Police Department. Joe is also the husband of the late Francine West, the father of Iris West and Wally West and the foster father of Barry Allen.</figcaption>
+		</figure>
+		
+		<figure class="flashSlides">
+		<figcaption><h2>The Flash</h2><br><center>
+		<img src="../images/Harrison.Wells.jpg" style="height: 50%;"><br> </center>
+		Dr. Harrison "Harry" Wells is the founder of S.T.A.R. Labs on Earth Two and the father of Jesse Quick who was taken by the meta-human criminal known as "Zoom". Harry than traveled to Earth One, joining the team led by Barry Allen to take down Zoom. While he was eventually forced to work as a mole for Zoom, Harry eventually turned on the speedster criminal, and with the help of Barry Allen and Cisco Ramon, freed his daughter from captivity. He continued working with Team Flash as its main scientific mind to defeat Zoom, before eventually going back to Earth Two with his daughter and Jay Garrick, after Zoom was no more. </figcaption>
+		</figure>
+		
+		<figure class="flashSlides">
+		<figcaption><h2>The Flash</h2><br><center>
+		<img src="../images/Caitlin.Snow.jpg" style="height: 50%;"><br> </center>
+		Dr. Caitlin "Cait" Snow is a former scientist at Mercury Labs and a former bio-engineer at S.T.A.R. Labs. She was working during the particle accelerator disaster and tended to Barry Allen during his coma with Cisco Ramon until he woke up. After he began his crusade as "The Flash" Caitlin became a member of his team with Cisco and Dr. Harrison Wells, before discovering his true identity as Eobard Thawne, and provides medical support for the team. Caitlin is also the wife of the late Ronnie Raymond, and is close friends with Cisco, Barry and Felicity Smoak. </figcaption>
+		</figure>
+		
+		<figure class="flashSlides">
+		<figcaption><h2>The Flash</h2><br><center>
+		<img src="../images/Cisco.Ramon.jpg" style="height: 50%;"><br> </center> 
+		Francisco "Cisco" Ramon[1], nicknamed Vibe by Barry Allen, is a mechanical engineering genius and a meta-human at S.T.A.R. Labs, also formerly serving as the prison guard to their makeshift prison. He came from a rather poor Puerto Rican family, and provides much-needed comic relief around his stiff workplace. Cisco is also the co-leader of Team Flash. He was also friends with Harrison Wells before learning his true identity as Eobard Thawne, though Eobard looked at Cisco as a surrogate son before and after his reveal. He also developed a rivalry with Hartley Rathaway and a friendly relationship with Ray Palmer. It was later revealed Cisco was also affected by the particle accelerator, causing him to become a meta-human with the ability to manipulate the vibrational energy of reality. </figcaption>
+		</figure>
+		
+		<figure class="flashSlides">
+		<figcaption><h2>The Flash</h2><br><center>
+		<img src="../images/kidflash.jpg" style="height: 400px;"><br> </center>
+		Wallace "Wally" West is the son of Joe and the late Francine West, and the younger brother of Iris West. He was a champion drag-racer under the alias "Taillights". He gained his speed in the post-Flashpoint timeline, donning the name Kid Flash, which is also how he was nicknamed by his friends and some members of the media in the Flashpoint timeline. After defeating and detaining the criminal known as Plunder, he was embraced by Central City and officially became known as Kid Flash to all. He is the boyfriend of Jesse Quick who moved to Earth-3 and was briefly trapped in the Speed Force to replace Savitar. He was later rescued by Barry Allen.</figcaption>
+		</figure>
+
+	
+		</center>
+
+
+	</div>
+</div>
+	<script>
+	var castImages = 1;
+	flashCast(castImages);
+
+	function spinCast(x) {
+		flashCast(castImages += x);
+	}
+	
+	function flashCast(x) {
+		var y;
+		var z = document.getElementsByClassName("flashSlides");
+		if (x > z.length) {castImages = 1}
+		if (x < 1) {castImages = z.length}
+		for (y = 0; y < z.length; y++) {
+			z[y].style.display = "none";
+		}
+			z[castImages-1].style.display ="block";
+		
+	}
+
+	</script>
+
+
+</body>
+</html>

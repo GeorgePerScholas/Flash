@@ -1,0 +1,191 @@
+/*Universal to all pages*/
+.header{
+	display: flex;
+	flex-direction: column;
+	background-image: url("../images/banner.top.jpg");
+	/*background-image: url("../images/gifs/FlashBanner.gif");*/
+	background-position: top center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: red;
+	text-align: left;
+	padding:30px;
+	color: rgb(256,256,256);
+}
+
+.navbar{
+	margin: 10px;
+	display: flex;
+	padding-right: 10px;
+	padding-left: 10px;
+	justify-content: space-between;
+	color: rgb(256,256,256);
+}
+
+#buttonReg a:hover {
+	background-color: (256,0,0);
+	color: rgb(256,0,0);
+}
+
+.buttonright{
+	background-image: url("../images/button.right.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30px;
+	width: 60px;
+}
+
+.buttonright a:hover {
+	background-size: 120%;
+	background-color: (256,256,256)
+} 
+
+
+.buttonleft{
+	background-color: none;
+	background-image: url("../images/button.left.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 30px;
+	width: 60px;
+}
+
+.buttonleft a:hover {
+	background-size: 120%;
+} 
+
+p {
+	font-family:'Josefin Sans', sans-serif;
+	color: white;
+	font-size: 14pt;
+}
+
+h1,h3 {
+	font-family:'Josefin Sans', sans-serif;
+	color: white;
+	font-size: 250%;
+}
+
+figcaption{
+	font-family:'Josefin Sans', sans-serif;
+	font-size: 14pt;
+	text-align: left;
+	color: white;
+}
+
+
+
+
+/*Index page*/
+
+.main{
+	display: flex;
+	background-image: url("../images/flash.bolt.png");*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+	padding: 250px;
+	align-items: center;
+	height: 100%;
+	color:red;
+	
+}
+
+.main h1{
+	color:red;
+}
+
+
+.body{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgb(256,0,0);
+
+}
+
+.left{
+	width: 200px;
+	height: 700px;
+	order: 1;
+	flex: 1;
+	background-image: url("../images/sideleft.jpg");
+	background-position: top right;
+	align-items: 
+}
+
+.right{
+	width: 200px;
+	height: 700px;
+	order: 3;
+	flex: 1;
+	object-position: right;
+	background-image: url("../images/sideright.jpg");
+}
+.viewer{
+	order:2;
+	flex: 3;
+	width: 350px;
+	background-color: black;
+	padding: 15px;
+	align-content: center;
+	align-items: center;
+}
+
+.flashSlides{
+	border: solid 3px yellow;
+	padding: 5px;
+	background-color: black;
+	align-content: center;
+	align-items: center;
+}
+
+.center{
+	order:2;
+	flex: 3;
+	padding: 15px;
+	align-content: center;
+	align-items: center;
+	
+
+}
+
+.centerText{
+	background-image: url("../images/flash.logo.png");
+	background-size: 75%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	align-items: center;
+	align-content: center;
+	order:2;
+	flex:2;
+	padding: 15px;
+	height: 670px;
+
+
+}
+
+.centerText p{
+	color: black;
+	align-self: center;
+	align-content: center;
+	padding: 10px;
+	margin: auto;
+	background-color: rgba(252, 255, 81,.5);
+}
+
+#buttonReg{
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family:'Josefin Sans', sans-serif;
+	font-size: 14pt;
+	margin: auto;
+}
+
+a:link {
+	text-decoration: none;
+}
