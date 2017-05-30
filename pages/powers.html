@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Powers</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="header">
+	<h1>Flash Powers</h1>
+	</div>
+
+
+
+<div class="navbar">
+		<div id="buttonReg"><a href="about.html">About</a></div>
+		<div id="buttonReg"><a href="flashcast.html">Characters</a></div>
+		<div id="buttonReg"><a href="powers.html">Flash Powers</a></div>
+		<div id="buttonReg"><a href="villians.html">Rouges Gallery</a></div>
+</div>
+
+<div class="body">
+	<div class="left"></div>
+	<div class="right"></div>
+	<div class="center">
+		<center><img src="../images/button.left.png" onclick="spinCast(-1)" style="width: 75px;">
+		<img src="../images/button.right.png" onclick="spinCast(1)" style="width: 75px;"><br><br>
+		
+
+
+		
+		
+		<figure class="flashSlides">
+		<figcaption><h2>Super Speed</h2><br>
+		<center><img src="../images/gifs/flashspeed.gif" style="height: 400px;"></center>
+		Barry can move at vast speeds, able to run across vertical structures and over large masses of water. Using this for his various daily activities, he can complete them all in seconds. According to Eobard Thawne, Barry's speed is potentially limitless. While reaching Mach 3.3 on his own and later Mach 13.2 from tachyons, since increasing connection to the Speed Force, Barry has continually grown faster.</figcaption>
+		</figure>
+
+		<figure class="flashSlides">
+		<figcaption><h2>Phasing</h2><br>
+		<center><img src="../images/gifs/flashphasing.gif" style="height: 400px;"><br></center>
+		By vibrating his molecules at the frequency of air, Barry can physically pass through solid objects. He could later do this with multiple targets, saving an entire moving train and hundreds of passengers.</figcaption>
+		</figure>
+
+		<figure class="flashSlides">
+		<figcaption><h2>Lightning Strike</h2><br>
+		<center><img src="../images/gifs/flashstrike.gif" style="height: 400px;"><br></center>
+		While generating enough velocity, Barry can produce yellow electricity from his body, most commonly seen when moving at high speeds, and use it in many ways. He can focus the energy into specific part of his body to produce a strong static shock on contact with the target. Taught by Hunter Zolomon, Barry can harness this build-up of electricity, to which he can repeatedly hurl lightning to stun or repel enemies, and also electrify water.</figcaption>
+		</figure>
+
+		<figure class="flashSlides">
+		<figcaption><h2>The Speed Force</h2><br>
+		<center><img src="../images/gifs/speedforce.gif" style="height: 400px;"><br></center>
+		The Speed Force is an extra-dimensional source of energy where Speedsters draw their power to run extraordinarily fast and to utilize a number of abilities including time travel and traveling between dimensions. The Speed Force also acts as a sort of purgatory-like realm for speedsters who when killed appear inside the Speed Force and are offered the chance to leave but without their speed, but will restore their power if they prove themselves worthy enough to wield it again. </figcaption>
+		</figure>
+
+
+	</center>
+	</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+	<script>
+	var castImages = 1;
+	flashCast(castImages);
+
+	function spinCast(x) {
+		flashCast(castImages += x);
+	}
+	
+	function flashCast(x) {
+		var y;
+		var z = document.getElementsByClassName("flashSlides");
+		if (x > z.length) {castImages = 1}
+		if (x < 1) {castImages = z.length}
+		for (y = 0; y < z.length; y++) {
+			z[y].style.display = "none";
+		}
+			z[castImages-1].style.display ="block";
+		
+	}
+
+	</script>
+</body>
+</html>
